@@ -1,0 +1,10 @@
+services:
+  bot:
+    build: '.'
+    ports:
+      - '8890:8890'
+    volumes:
+      - './config.ini:/app/config.ini'
+      - './db:/app/db'
+      - './attachments:/app/attachments'
+      - './logs:/app/logs'
